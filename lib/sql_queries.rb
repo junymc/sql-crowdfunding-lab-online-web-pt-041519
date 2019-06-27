@@ -57,4 +57,5 @@ FROM projects JOIN pledges
 ON projects.id = pledges.project_id
 GROUP BY projects.category
 HAVING projects.category = 'books';"
+#why does it work with WHERE?? WHERE doesn't work with aggregate SUM
 end
